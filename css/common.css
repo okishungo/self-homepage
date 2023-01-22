@@ -1,0 +1,561 @@
+@charset "UTF-8";
+
+/*全体の基本設定*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    /*↓BIZ UDPゴシックのCSS,全体に指定*/
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    color: #444;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+img{
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*ヘッダー(ホーム画面)*/
+header{
+    margin: 0;
+}
+#top{
+    background-image: url(../img/main-pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    height: 500px;
+}
+#top h1{
+    font-family: 'Racing Sans One', cursive;/*見出し専用フォント*/
+    font-size: 100px;
+    line-height: 1;
+    color:#f2f2f2;
+    margin-left: 15px;
+    letter-spacing: 0.1em;
+}
+#top h2{
+    color: #f2f2f2;
+    font-family: 'Racing Sans One', cursive;
+    margin-left: 25px;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+
+/*ナビゲーション*/
+.con{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #444;
+}
+.con li{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+.con li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.con li.current a{
+    color:#f2f2f2;
+}
+
+
+/*INTRODUCTION*/
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.introduction{
+    display: flex;
+    margin-bottom: 35px;
+}
+#wrap .introduction h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color:#444;
+    margin-left: 50px;
+}
+#wrap .introduction p{
+    margin-left: 50px;
+}
+
+/*BIOGRAPHY*/
+#wrap h1{
+    font-family: 'Racing Sans One', cursive;/*見出し専用フォント*/
+    font-size: 70px;
+    line-height: 1;
+    color:#444;
+    margin: 100px 0 10px 50px;
+}
+#wrap .biography h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 0;
+    color:#444;
+    margin-left: 185px;
+}
+
+#wrap .biography th{
+    width: 240px;
+    background-color: #444;
+    color: #f2f2f2;
+    padding: 12px 0;
+    border: 1px solid #444;
+}
+#wrap .biography td{
+    width: 660px;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #444;
+}
+#wrap .biography table{
+   margin: 30px 50px;
+}
+
+/*LICENSE*/
+#wrap .license h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 0;
+    color:#444;
+    margin-left: 140px;
+}
+
+#wrap .license td{
+    width: 660px;
+    background-color: #444;
+    color: #f2f2f2;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 10px;
+}
+#wrap .license table{
+    margin: 10px 10px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 20px;
+ }
+
+/*EXPERIENCE*/
+#wrap .experience h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 0;
+    color:#444;
+    margin: 0 0 40px 200px;
+}
+#wrap .experience h3{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    color:#444;
+    margin: 0 1200px 0 50px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+#wrap .experience a{
+    color: #7ca1c1;
+}
+#wrap .experience a:visited{
+    color: #7ca1c1;
+}
+#wrap .experience ul li{
+    margin: 0 0 0 50px;
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none!important;
+}
+
+/*RESEARCH*/
+#wrap .research h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 0;
+    color:#444;
+    margin-left: 170px;
+}
+#wrap .research h3{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    color:#444;
+    margin: 30px 0 0 50px;
+}
+#wrap .research hr{
+    border-top: 1px #444 solid;
+    height: 2px;
+    background-color: #444;
+    color: #444;
+    margin: 20px 50px;
+}
+#wrap .research ul li{
+    margin: 0 0 0 50px;
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none!important;
+}
+
+/*AWARDS*/
+#wrap .awards h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 0;
+    color:#444;
+    margin-left: 145px;
+}
+
+#wrap .awards table{
+    margin: 30px 0 0 50px;
+   width: 93%;
+   border-collapse: collapse;
+}
+#wrap .awards th{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444;
+    color: #f2f2f2;
+    border-bottom: solid 2px #f2f2f2;
+}
+#wrap .awards th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #444;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+#wrap .awards table td{
+    text-align: center;
+    width: 70%;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    border-bottom: solid 2px #444;
+}
+/*上へ戻るボタン*/
+#wrap .button{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 25px;
+    color:#f2f2f2;
+    border: solid 0 #f2f2f2;
+    border-radius: 50%;
+    background:#7ca1c1;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 99999;
+}
+#wrap .button a{
+    color: #f2f2f2;
+}
+
+/*CONTACT*/
+#footer{
+    background-color: #444;
+    color:#f2f2f2;
+    font-size: 20px;
+}
+#footer p{
+    margin-left: 70px; 
+}
+#footer h1{
+    font-family: 'Racing Sans One', cursive;/*見出し専用フォント*/
+    font-size: 70px;
+    line-height: 1;
+    color:#f2f2f2;
+    margin: 100px 0 10px 50px;
+}
+#footer h2{
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    font-size: 20px;
+    line-height: 0;
+    color:#f2f2f2;
+    margin-left: 115px;
+}
+#footer .form dl dt{
+    width: 250px;
+    padding: 10px 0;
+    margin-left: 60px; 
+    float: left;
+    clear: both;
+}
+#footer .form dl dd{
+    padding: 10px 0;
+}
+#footer .form .name{
+    background-color: #f2f2f2;
+    color:#444;
+    font-size: 18px;
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    width: 500px;
+    height: 45px;
+    border-radius: 2px;
+    border: 0;
+}
+#footer .form .email{
+    background-color: #f2f2f2;
+    color:#444;
+    font-size: 18px;
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    width: 500px;
+    height: 45px;
+    border-radius: 2px;
+    border: 0;
+}
+#footer .form .type{
+    background-color: #f2f2f2;
+    color:#444;
+    font-size: 18px;
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    border: 0;
+}
+#footer .form .message{
+    background-color: #f2f2f2;
+    color:#444;
+    font-size: 18px;
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    width: 950px;
+    height: 150px;
+    border-radius: 2px;
+    border: 0;
+}
+#footer .form .btn{
+    background-color: #7ca1c1;
+    color:#f2f2f2;
+    font-size: 20px;
+    font-family: 'BIZ UDPGothic' , sans-serif;
+    width: 120px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 2px;
+    border: 0;
+    margin-left: 310px;
+}
+#footer .form .btn:hover{
+    background-color: #f2f2f2;
+    color: #7ca1c1;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    /*画面サイズが600px以下の場合に適応*/
+    /*ヘッダー*/
+    body{
+        font-size: 1.0vw;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: auto;
+        margin: 0 5%;
+    }
+    /*トップ*/
+    #top{
+        background-image: url(../img/home-pic.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 45vh;
+    }
+    #top h1{
+        font-size: 7.2vw;
+        margin-left: 5px;
+    }
+    #top h2{
+        font-size: 3.5vw;
+        margin-left: 5px;
+    }
+    /*ナビゲーション*/
+    .con{
+        flex-wrap: wrap;
+        margin: 0 18.5px;
+    }
+    .con li{
+        width: 50%;
+    }
+    .con li a{
+        font-size: 1.0px;
+    }
+    /*INTRODUCTION*/
+    .introduction{
+        display: flex;
+        margin: 0 25px;
+
+    }
+    #wrap .introduction h2{
+        font-size: 15px;
+        line-height: 1.5;
+        color:#444;
+        margin: 5px 0;
+    }
+    #wrap .introduction p{
+        margin: 0;
+    }
+    /*BIOGRAPHY*/
+    #wrap h1{
+        font-size: 35px;
+        margin: 40px 25px 5px 25px;
+    }
+    #wrap .biography h2{
+        font-size: 10px;
+        margin: 0 25px 20px 25px;
+    }
+
+    #wrap .biography th{
+        width: auto;
+        padding: 5px;
+    }
+    #wrap .biography td{
+        width: auto;
+        padding: 10px;
+    }
+    #wrap .biography table{
+        margin: 15px;
+    }
+    /*LICENSE*/
+    #wrap .license h2{ 
+        font-size: 10px;
+        margin: 0 25px 20px 25px;
+    }
+    #wrap .license td{
+        display: block;
+        width: 100%;
+        padding: 5px 35px;
+        margin: 10px 20px 0 20px;
+    }
+    #wrap .license table{
+        margin: 0;
+        border-spacing: 0;
+    }
+    /*EXPERIENCE*/
+    #wrap .experience h2{
+        font-size:10px;
+        margin: 0 25px 20px 25px;
+    }
+    #wrap .experience h3{
+        font-size: 12px;
+        line-height: 0.5;
+        margin: 0 300px 0 25px;
+        padding: 10px;
+    }
+    #wrap .experience ul li{
+        margin: 0 30px 0 0;
+        line-height: 1.5;
+    }
+    /*RESEARCH*/
+    #wrap .research h2{
+        font-size: 10px;
+        margin: 0 25px 20px 25px;
+    }
+    #wrap .research h3{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+    #wrap .research hr{
+        height: 1px;
+        margin: 10px 25px;
+    }
+    #wrap .research ul li{
+        margin: 0 25px 0 0;
+    }
+   /*AWARDS*/
+    #wrap .awards h2{
+        font-size: 10px;
+        margin: 0 25px 20px 25px;
+    }
+    #wrap .awards table{
+        margin: 0 20px;
+        width: auto;
+    }
+    #wrap .awards th{
+        width: 20%;
+        border-bottom: solid 1px #f2f2f2;
+    }
+    #wrap .awards table td{
+        border-bottom: solid 1px #444;
+    }
+    /*CONTACT*/
+    #footer{
+        font-size: 10px;
+    }
+    #footer p{
+        margin-left: 0; 
+    }
+    #footer h1{
+        font-size: 35px;
+        margin:  40px 25px 5px 25px;
+    }
+    #footer h2{
+        font-size: 10px;
+        margin: 0 25px 0 25px;
+    }  
+    #footer .form dl dt{
+        width: 250px;
+        padding: 2px 0;
+        margin-left: 25px; 
+    }
+    #footer .form dl dd{
+        padding: 10px 0;
+    }
+    #footer .form .name{
+        font-size: 12px;
+        width: 200px;
+        height: 20px;
+    }
+    #footer .form .email{
+        font-size: 12px;
+        width: 200px;
+        height: 20px;
+    }
+    #footer .form .type{
+        font-size: 12px;
+        width: 210px;
+        height: 20px;
+    }
+    #footer .form .message{
+        font-size: 12px;
+        width: 300px;
+        height: 70px;
+    }
+    #footer .form .btn{
+        font-size: 12px;
+        width: 80px;
+        line-height: 20px;
+        margin-left: 40px;
+}
+}
