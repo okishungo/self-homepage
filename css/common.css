@@ -376,7 +376,7 @@ header{
     /*画面サイズが600px以下の場合に適応*/
     /*ヘッダー*/
     body{
-        font-size: 1.0vw;
+        font-size: 16px;
         margin: 0;
         padding: 0;
     }
