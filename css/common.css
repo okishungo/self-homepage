@@ -376,8 +376,7 @@ header{
     /*画面サイズが600px以下の場合に適応*/
     /*ヘッダー*/
     body{
-    -webkit-text-size-adjust; 100%;
-        font-size: 10px;
+        font-size: 12px;
         margin: 0;
         padding: 0;
     }
@@ -411,7 +410,7 @@ header{
     }
     .con li a{
         -webkit-text-size-adjust; 100%;
-        font-size: 10px;
+        font-size: 12px;
     }
     /*INTRODUCTION*/
     .introduction{
